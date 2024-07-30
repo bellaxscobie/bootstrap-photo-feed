@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+  <title>Bootstrap Photo Feed</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <div class="navbar navbar-light bg-light">
+    <div class="container d-flex justify-content-between">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <div class="px-1">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </div>
+        <h5>Instagram</h5>
+      </a>
+      <div class="align-items-right d-flex">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Create a new post
+        </button>
+        <div class="dropdown">
+          <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-cog"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Log Out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-th fa-1x text-secondary shadow-lg"></i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fas fa-square fa-1x text-secondary"></i></button>
+    </li>
+   
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+        <div class="container">
+            <div class="row justify-content-center">
+            <div class="col-md-3 col-sm-6 px-1 my-1 mx-1">
+              <img src="friends.jpg" alt="Card image cap" width="100%" height="400px">
+            </div>
+            <div class="col-md-3 col-sm-6 px-1 my-1 mx-1">
+              <img src="cancun.jpg" alt="Card image cap" width="100%" height="400px">
+            </div>
+            <div class="col-md-3 col-sm-6 px-1 my-1 mx-1">
+              <img src="thewave.jpg" alt="Card image cap" width="100%" height="400px">
+            </div>
+            <div class="col-md-3 col-sm-6 px-1 my-1 mx-1">
+              <img src="intheclouds.jpg" alt="Card image cap" width="100%" height="400px">
+            </div>
+            <div class="col-md-3 col-sm-6 px-1 my-1 mx-1">
+              <img src="myart.jpg" alt="Card image cap" width="100%" height="400px">
+            </div>
+            <div class="col-md-3 col-sm-6 px-1 my-1 mx-1">
+              <img src="venice.jpg" alt="Card image cap" width="100%" height="400px">
+            </div>
+            <div class="col-md-3 col-sm-6 px-1 my-1 mx-1">
+              <img src="blackbeach.jpg" alt="Card image cap" width="100%" height="400px">
+            </div>
+            <div class="col-md-3 col-sm-6 px-1 my-1 mx-1">
+              <img src="ny.jpg" alt="Card image cap" width="100%" height="400px">
+            </div>
+            <div class="col-md-3 col-sm-6 px-1 my-1 mx-1">
+              <img src="colorado.jpg" alt="Card image cap" width="100%" height="400px">
+            </div>
+          </div>
+        </div>
+        
+    </div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+        <div class="container">
+            <div class="card mx-auto" style="width: 630px;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <h3>My best friends!</h3>
+                </li>
+                <li class="list-group-item"><img src="friends.jpg" alt="Card image cap" width="600px" height="500px"></li>
+                <li class="list-group-item pb-0">
+                  <h6><strong>222 Likes</strong></h6>
+                  <p>These are some of my best friends from elementary and high school.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="card mx-auto" style="width: 630px;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <h3>Growth</h3>
+                </li>
+                <li class="list-group-item"><img src="cancun.jpg" alt="Card image cap" width="100%" height="500px"></li>
+                <li class="list-group-item pb-0">
+                  <h6><strong>303 Likes</strong></h6>
+                  <p>Fill your surroundings with plants, let your mind breathe, and let the growth spread like wildfire!</p>
+                </li>
+              </ul>
+            </div>
+            <div class="card mx-auto" style="width: 630px;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <h3>Wavy baby~</h3>
+                </li>
+                <li class="list-group-item"><img src="thewave.jpg" alt="Card image cap" width="100%" height="500px"></li>
+                <li class="list-group-item pb-0">
+                  <h6><strong>232 Likes</strong></h6>
+                  <p>Feeling wavy? Come ride the wave with me.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="card mx-auto" style="width: 630px;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <h3>Somewhere in the clouds</h3>
+                </li>
+                <li class="list-group-item"><img src="intheclouds.jpg" alt="Card image cap" width="100%" height="500px"></li>
+                <li class="list-group-item pb-0">
+                  <h6><strong>420 Likes</strong></h6>
+                  <p>This is what I want my view to be like at LEAST once a month</p>
+                </li>
+              </ul>
+            </div>
+            <div class="card mx-auto" style="width: 630px;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <h3>Shadow boxes galore</h3>
+                </li>
+                <li class="list-group-item"><img src="myart.jpg" alt="Card image cap" width="100%" height="500px"></li>
+                <li class="list-group-item pb-0">
+                  <h6><strong>627 Likes</strong></h6>
+                  <p>My favorite form of art! Creating 3-D shadow boxes is my speciality!</p>
+                </li>
+              </ul>
+            </div>
+            <div class="card mx-auto" style="width: 630px;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <h3>Venice</h3>
+                </li>
+                <li class="list-group-item"><img src="venice.jpg" alt="Card image cap" width="100%" height="500px"></li>
+                <li class="list-group-item pb-0">
+                  <h6><strong>444 Likes</strong></h6>
+                  <p>Italy has my heart forever x</p>
+                </li>
+              </ul>
+            </div>
+            <div class="card mx-auto" style="width: 630px;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <h3>Black Sand Beach</h3>
+                </li>
+                <li class="list-group-item"><img src="blackbeach.jpg" alt="Card image cap" width="100%" height="500px"></li>
+                <li class="list-group-item pb-0">
+                  <h6><strong>529 Likes</strong></h6>
+                  <p>Iceland is an absolute dream... like really, am I dreaming?</p>
+                </li>
+              </ul>
+            </div>
+            <div class="card mx-auto" style="width: 630px;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <h3>Empire state of mind</h3>
+                </li>
+                <li class="list-group-item"><img src="ny.jpg" alt="Card image cap" width="100%" height="500px"></li>
+                <li class="list-group-item pb-0">
+                  <h6><strong>381 Likes</strong></h6>
+                  <p>There really is nothing you cannot do, especially in New York</p>
+                </li>
+              </ul>
+            </div>
+            <div class="card mx-auto" style="width: 630px;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <h3>You've been dreaming</h3>
+                </li>
+                <li class="list-group-item"><img src="colorado.jpg" alt="Card image cap" width="100%" height="500px"></li>
+                <li class="list-group-item pb-0">
+                  <h6><strong>484 Likes</strong></h6>
+                  <p>Come wake up in Colorado with me</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </div>
+
+  </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"></script>
+    </div>
+</body>
+</html>
